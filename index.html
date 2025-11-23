@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking Google Fonts: Fraunces (700, 900) and Barlow (600) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Linking your main stylesheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Sunnyside Agency</title>
+</head>
+<body>
+    <!-- 
+        ========================================
+        1. HEADER & HERO SECTION 
+        ========================================
+        The header is positioned over the hero image. 
+    -->
+    <header class="site-header">
+        <div class="header-container container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <img src="images/logo.svg" alt="Sunnyside Agency Logo" class="header-logo-img">
+            </a>
+
+            <!-- Mobile Menu Toggle (CSS Only Checkbox Trick) -->
+            <!-- The checkbox controls the visibility of the nav -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-nav-list" aria-expanded="false">
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle Navigation">
+                <!-- Hamburger Icon using inline SVG for easy styling -->
+                <!-- <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 18v-2H0v2h24zm0-6v-2H0v2h24zm0-6V4H0v2h24z" fill="#FFF" fill-rule="evenodd"/></svg> -->
+                 <img src="images/icon-hamburger.svg" alt="Hamburger">
+            </label>
+
+            <!-- Navigation Menu -->
+            <nav class="main-nav" id="main-nav-list">
+                <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li class="nav-contact">
+                        <a href="#" class="btn btn--contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <!-- Hero Content is part of the visual header area -->
+        <section class="hero-section">
+            <h1 class="hero-title">We are creatives</h1>
+            <!-- Down Arrow Icon Placeholder -->
+            <div class="arrow-down">
+               <img src="images/icon-arrow-down.svg" alt="Down arrow icon" class="hero-arrow">
+            </div>
+        </section>
+    </header>
+<!-- http://www.w3.org/2000/svg -->
+    <main>
+        <!-- 
+            ========================================
+            2. FEATURE GRIDS SECTION 
+            Uses a grid/flex layout for responsiveness
+            ========================================
+        -->
+        <section class="features-grid">
+            <!-- 2.1 Transform Your Brand (Text) -->
+            <div class="feature-item feature-item--text">
+                <div class="feature-content">
+                    <h2>Transform your brand</h2>
+                    <p>
+                        We are a full-service creative agency specializing in helping brands grow fast. 
+                        Engage your clients through compelling visuals that do most of the marketing for you.
+                    </p>
+                    <a href="#" class="link-learn more link-learn--yellow">Learn More</a>
+                </div>
+            </div>
+
+            <!-- 2.2 Transform Your Brand (Image - Egg) -->
+            <div class="feature-item feature-item--image-egg">
+                
+                <!-- 
+                    PLACE YOUR EGG IMAGE HERE 
+                    Mobile: assets/images/mobile/image-transform.jpg
+                    Desktop: assets/images/desktop/image-transform.jpg 
+                    CSS will handle different images using background-image for simplicity
+                -->
+            </div>
+
+            <!-- 2.3 Stand Out (Image - Glass) -->
+            <div class="feature-item feature-item--image-glass">
+                <!-- 
+                    PLACE YOUR GLASS IMAGE HERE 
+                    Mobile: assets/images/mobile/image-stand-out.jpg
+                    Desktop: assets/images/desktop/image-stand-out.jpg 
+                    CSS will handle different images using background-image for simplicity
+                -->
+            </div>
+
+            <!-- 2.4 Stand Out (Text) -->
+            <div class="feature-item feature-item--text">
+                <div class="feature-content">
+                    <h2>Stand out to the right audience</h2>
+                    <p>
+                        Using a collaborative formula of designers, researchers, photographers, videographers, 
+                        and copywriters, we'll build and extend your brand in digital places.
+                    </p>
+                    <a href="#" class="link-learn more link-learn--red">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            ========================================
+            3. SERVICES GRID (Graphic Design & Photography)
+            ========================================
+        -->
+        <section class="services-grid">
+            <article class="service-card service-card--graphic-design">
+                <div class="service-content">
+                    <h3>Graphic Design</h3>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+                </div>
+            </article>
+            <article class="service-card service-card--photography">
+                <div class="service-content">
+                    <h3>Photography</h3>
+                    <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- 
+            ========================================
+            4. TESTIMONIALS SECTION
+            ========================================
+        -->
+        <section class="testimonials-section">
+            <h3 class="section-title">Client Testimonials</h3>
+            <div class="testimonials-container container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <!-- Placeholder for image -->
+                    <img src="/images/image-emily.jpg" alt="Emily R." class="testimonial-avatar">
+                    <p class="testimonial-quote">
+                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                    </p>
+                    <p class="testimonial-name">Emily R.</p>
+                    <p class="testimonial-role">Marketing Director</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <!-- Placeholder for image -->
+                    <img src="/images/image-thomas.jpg" alt="Thomas S." class="testimonial-avatar">
+                    <p class="testimonial-quote">
+                        Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
+                    </p>
+                    <p class="testimonial-name">Thomas S.</p>
+                    <p class="testimonial-role">Chief Operating Officer</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <!-- Placeholder for image -->
+                    <img src="/images/image-jennie.jpg" alt="Jennie F." class="testimonial-avatar">
+                    <p class="testimonial-quote">
+                        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                    </p>
+                    <p class="testimonial-name">Jennie F.</p>
+                    <p class="testimonial-role">Business Owner</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            ========================================
+            5. IMAGE GALLERY (4 Images)
+            ========================================
+        -->
+        <section class="image-gallery">
+            <!-- Images are placed directly inside the grid container -->
+            <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="Four milk bottles with colorful tops." class="gallery-img">
+            <img src="/images/mobile/image-gallery-orange.jpg" alt="An orange slice on a plate." class="gallery-img">
+            <img src="/images/mobile/image-gallery-cone.jpg" alt="An empty ice cream cone." class="gallery-img">
+            <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="A stack of white sugar cubes." class="gallery-img">
+        </section>
+    </main>
+
+    <!-- 
+        ========================================
+        6. FOOTER
+        ========================================
+    -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="#" class="footer-logo">sunnyside</a>
+            
+            <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+
+           <div class="social-icons">
+                <!-- Facebook Icon -->
+                <a href="#" aria-label="Facebook">
+                    <!-- REPLACED INLINE SVG -->
+                    <img src="images/icon-facebook.svg" alt="Facebook icon" width="20" height="20">
+                </a>
+                <!-- Instagram Icon -->
+                <a href="#" aria-label="Instagram">
+                    <!-- REPLACED INLINE SVG -->
+                    <img src="images/icon-instagram.svg" alt="Instagram icon" width="20" height="20">
+                </a>
+                <!-- Twitter Icon -->
+                <a href="#" aria-label="Twitter">
+                    <!-- REPLACED INLINE SVG -->
+                    <img src="images/icon-twitter.svg" alt="Twitter icon" width="20" height="17">
+                </a>
+                <!-- Pinterest Icon -->
+                <a href="#" aria-label="Pinterest">
+                    <!-- REPLACED INLINE SVG -->
+                    <img src="images/icon-pinterest.svg" alt="Pinterest icon" width="20" height="20">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

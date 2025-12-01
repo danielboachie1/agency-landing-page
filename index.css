@@ -25,12 +25,9 @@
     --font-weight-heading-medium: 700;
     --font-weight-heading-bold: 900;
     
-    --font-size-body: 18px; /* Standard body copy size */
 }
 
-/* ========================= */
-/* 0. Comprehensive Reset & Base Styles */
-/* ========================= */
+
 
 *,
 *::before,
@@ -74,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
 }
 
-/* Reusable Layout Container */
+
 .container {
     width: 100%;
     padding-left: 24px; 
@@ -94,22 +91,11 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* ========================================================================= */
-/* 1. MOBILE-FIRST STYLES (Applies to all screens) */
-/* ========================================================================= */
-
-/* --------------------------------- */
-/* Header & Navigation (Mobile) */
-/* --------------------------------- */
 
 .site-header {
-    /* position: absolute; */
-    /* top: ;
-    left: 0; */
+    
     width: 100%;
     height: auto;
-    /* z-index: 100; */
-    /* padding: 32px 24px; */
 }
 
 .header-container {
@@ -127,15 +113,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-logo-img {
-    width: 124px; /* Set desired width for the SVG */
-    height: auto; /* Maintain aspect ratio */
+    width: 124px; 
+    height: auto; 
     display: block;
 }
-/* .logo {
-    font-size: 24px;
-    font-weight: 900;
-    color: var(--color-neutral-white);
-} */
+
 
 .menu-toggle {
     display: none; /* Hide the actual checkbox input */
@@ -185,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-list a {
     font-size: var(--font-size-body); 
-    color: var(--color-neutral-medium); /* Grey 550 for links */
+    color: var(--color-neutral-medium); 
     font-weight: var(--font-weight-body);
 }
 
@@ -202,9 +184,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block; 
 }
 
-/* --------------------------------- */
-/* Hero Section (Mobile) */
-/* --------------------------------- */
+
 .hero-section {
     position: relative;
     display: flex;
@@ -214,8 +194,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0px;
     padding-bottom: 50px;
     min-height: 530px; 
-    
-    /* === IMAGE LINK FOR MOBILE HERO === */
     background-image: url('../images/mobile/image-header.jpg');
     background-size: cover;
     background-position: center bottom;
@@ -256,12 +234,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .feature-item--image-egg {
-    /* Ensure no stray positioning is causing the shift */
-    position: initial; /* Ensure no absolute/relative positioning is inherited */
-    top: auto; /* Reset top positioning */
-    margin-top: 0; /* Ensure no negative margin is pushing it up */
-
-    /* Correct path from CSS perspective (assuming image is in /images/desktop) */
+    
+    position: initial; 
+    top: auto; 
+    margin-top: 0; 
     background-image: url('../images/desktop/image-transform.jpg'); 
     background-size: cover;
     background-position: center center;
@@ -287,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
-/* Learn More Links (Underlines) */
+
 .link-learn {
     position: relative;
     z-index: 1;
@@ -325,27 +301,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Images using background-image for responsive swapping */
 .feature-item--image-egg {
-    background-image: url('../images/desktop/image-transform.jpg');/* === MOBILE IMAGE LINK: TRANSFORM === */
+    background-image: url('../images/desktop/image-transform.jpg');
     background-size: cover;
     background-position: center center;
     min-height: 300px;
-    order: -1; /* Places image above text on mobile (Transform) */
+    order: -1; 
 }
 
 .feature-item--image-glass {
-    background-image: url('../images/mobile/image-stand-out.jpg');/* === MOBILE IMAGE LINK: STAND OUT === */
+    background-image: url('../images/mobile/image-stand-out.jpg');
     background-size: cover;
     background-position: center center;
     min-height: 300px;
     order: 3; 
 }
 
-/* --------------------------------- */
-/* Services Grid (Graphic/Photo) */
+
 
 .services-grid {
     display: flex;
-    flex-direction: column; /* Stacked on mobile */
+    flex-direction: column; 
 }
 
 .service-card {
@@ -375,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card--graphic-design {
-    background-image: url('../images/mobile/image-graphic-design.jpg');/* === MOBILE IMAGE LINK: GRAPHIC DESIGN === */
+    background-image: url('../images/mobile/image-graphic-design.jpg');
     
 }
 .service-card--graphic-design h3, 
@@ -384,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card--photography {
-    background-image: url('../images/mobile/image-photography.jpg');/* === MOBILE IMAGE LINK: PHOTOGRAPHY === */
+    background-image: url('../images/mobile/image-photography.jpg');
     
 }
 .service-card--photography h3, 
@@ -393,8 +368,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Testimonials */
-/* --------------------------------- */
+
 .testimonials-section {
     padding: 60px 0;
     background-color: var(--color-neutral-white);
@@ -413,7 +387,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .testimonials-container {
     display: flex;
-    flex-direction: column; /* Stacked on mobile */
+    flex-direction: column; 
     gap: 60px;
 }
 
@@ -442,9 +416,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-neutral-light);
 }
 
-/* --------------------------------- */
-/* Image Gallery (Mobile: 2x2 Grid) */
-/* --------------------------------- */
+
 .image-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -506,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* 2. DESKTOP OVERRIDES (min-width: 1024px) */
+/* DESKTOP OVERRIDES (min-width: 1024px) */
 
 @media (min-width: 1024px) {
 
@@ -536,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .main-nav::before {
-        display: none; /* Hide the notch */
+        display: none; 
     }
 
     .nav-list {
@@ -548,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav-list a {
-        color: var(--color-neutral-white); /* White links on desktop */
+        color: var(--color-neutral-white); 
         font-weight: 600;
         font-family: var(--font-sans);
         font-size: 16px;
@@ -566,18 +538,16 @@ h1, h2, h3, h4, h5, h6 {
         color: var(--color-neutral-white); 
     }
 
-    /* --------------------------------- */
-    /* Hero Section (Desktop) */
-    /* --------------------------------- */
+   
     .hero-section {
-        min-height: 800px; /* Taller height for desktop */
+        min-height: 800px; 
         padding-top: 144px; 
         padding-bottom: 220px;
         
         /* === IMAGE LINK FOR DESKTOP HERO === */
         background-image: url('../images/desktop/image-header.jpg');
         background-position: center top;
-        /* ================================= */
+        
     }
 
     .hero-title {
@@ -585,9 +555,7 @@ h1, h2, h3, h4, h5, h6 {
         letter-spacing: 10px;
     }
 
-    /* --------------------------------- */
-    /* Feature Grids (Desktop) */
-    /* --------------------------------- */
+   
     .features-grid {
         display: grid;
         grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -595,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .feature-item {
         min-height: 600px;
-        order: unset !important; /* Reset mobile ordering */
+        order: unset !important; 
     }
 
     .feature-item--text {
@@ -609,20 +577,16 @@ h1, h2, h3, h4, h5, h6 {
     
     /* Desktop Image Overrides */
     .feature-item--image-egg {
-        /* === DESKTOP IMAGE LINK: TRANSFORM === */
         background-image: url('../images/desktop/image-transform.jpg');
-        /* =================================== */
+        
     }
     
     .feature-item--image-glass {
-        /* === DESKTOP IMAGE LINK: STAND OUT === */
         background-image: url('../images/desktop/image-stand-out.jpg');
-        /* =================================== */
+        
     }
     
-    /* --------------------------------- */
-    /* Services Grid (Desktop) */
-    /* --------------------------------- */
+    
     .services-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -633,20 +597,16 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .service-card--graphic-design {
-        /* === DESKTOP IMAGE LINK: GRAPHIC DESIGN === */
-        background-image: url('../images/desktop/image-graphic-design.jpg');
-        /* ======================================= */
+       background-image: url('../images/desktop/image-graphic-design.jpg');
+       
     }
 
     .service-card--photography {
-        /* === DESKTOP IMAGE LINK: PHOTOGRAPHY === */
         background-image: url('../images/desktop/image-photography.jpg');
-        /* ===================================== */
+       
     }
 
-    /* --------------------------------- */
-    /* Testimonials */
-    /* --------------------------------- */
+  
     .testimonials-section {
         padding: 160px 0;
     }
@@ -660,9 +620,7 @@ h1, h2, h3, h4, h5, h6 {
         gap: 30px;
     }
     
-    /* --------------------------------- */
-    /* Image Gallery */
-    /* --------------------------------- */
+  
     .image-gallery {
         grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
     }
